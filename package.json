@@ -1,0 +1,37 @@
+{
+  "name": "create-a12v-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "create-a12v-app": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/main.ts",
+    "start": "node ./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "degit": "^2.8.4",
+    "execa": "^9.5.3",
+    "figlet": "^1.8.1",
+    "inquirer": "^12.6.3",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/degit": "^2.8.6",
+    "@types/figlet": "^1.7.0",
+    "@types/inquirer": "^9.0.8",
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}
