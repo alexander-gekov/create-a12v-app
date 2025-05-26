@@ -15,6 +15,9 @@ type Answers = {
 };
 
 export default async function run(): Promise<void> {
+  const rawArgs = process.argv.slice(2);
+  const defaultProjectName = rawArgs[0];
+
   console.log(
     chalk.magenta(
       figlet.textSync("create-a12v-app", {
@@ -32,6 +35,7 @@ export default async function run(): Promise<void> {
       type: "input",
       name: "projectName",
       message: "Project name:",
+      default: defaultProjectName,
       validate: (input: string) =>
         input ? true : "Project name cannot be empty",
     },
